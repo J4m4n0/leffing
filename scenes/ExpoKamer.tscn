@@ -66,3 +66,7 @@ zone_id = 1
 [node name="TriggerZone3" parent="." unique_id=641920545 instance=ExtResource("2_ui6gb")]
 position = Vector2(500, 500)
 zone_id = 2
+
+[node name="TriggerZone4" parent="." unique_id=300089017 instance=ExtResource("2_ui6gb")]
+position = Vector2(700, 500)
+zone_id = 3

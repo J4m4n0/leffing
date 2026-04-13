@@ -1,0 +1,40 @@
+[gd_scene format=3 uid="uid://bew2tm3b8s6ib"]
+
+[ext_resource type="Script" uid="uid://dkn0sflheebur" path="res://scripts/ui/EindschermUI.gd" id="1_qvfeq"]
+
+[node name="EindschermUI" type="Control" unique_id=2024177763]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_qvfeq")
+
+[node name="Panel" type="Panel" parent="." unique_id=257220436]
+layout_mode = 0
+offset_left = 276.0
+offset_top = 124.0
+offset_right = 876.0
+offset_bottom = 524.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=314383448]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 580.0
+offset_bottom = 380.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer" unique_id=1937468667]
+layout_mode = 2
+text = "Expo afgerond!"
+
+[node name="ScoreLabel" type="Label" parent="Panel/VBoxContainer" unique_id=544638784]
+layout_mode = 2
+
+[node name="UitlegLabel" type="Label" parent="Panel/VBoxContainer" unique_id=1191166947]
+layout_mode = 2
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer" unique_id=1446701120]
+layout_mode = 2
+text = "Opnieuw spelen"
