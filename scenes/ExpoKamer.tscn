@@ -4,14 +4,53 @@
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ui6gb"]
 
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lkn46"]
+size = Vector2(1152, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_jqq07"]
+size = Vector2(1152, 32)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_iculm"]
+size = Vector2(32, 648)
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_mp8ed"]
+size = Vector2(32, 648)
+
 [node name="ExpoKamer" type="Node2D" unique_id=392395783]
 
 [node name="Speler" type="CharacterBody2D" parent="." unique_id=590566744]
+position = Vector2(574, 324)
 script = ExtResource("1_lkn46")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="Speler" unique_id=452065031]
 shape = SubResource("RectangleShape2D_ui6gb")
 
 [node name="ColorRect" type="ColorRect" parent="Speler" unique_id=1460391442]
-offset_right = 40.0
-offset_bottom = 40.0
+offset_left = -20.0
+offset_top = -20.0
+offset_right = 20.0
+offset_bottom = 20.0
+
+[node name="MuurBoven" type="StaticBody2D" parent="." unique_id=750120174]
+position = Vector2(576, 16)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MuurBoven" unique_id=371618785]
+shape = SubResource("RectangleShape2D_lkn46")
+
+[node name="MuurOnder" type="StaticBody2D" parent="." unique_id=625891360]
+position = Vector2(576, 632)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MuurOnder" unique_id=967740259]
+shape = SubResource("RectangleShape2D_jqq07")
+
+[node name="MuurLinks" type="StaticBody2D" parent="." unique_id=677943738]
+position = Vector2(16, 324)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MuurLinks" unique_id=908466558]
+shape = SubResource("RectangleShape2D_iculm")
+
+[node name="MuurRechts" type="StaticBody2D" parent="." unique_id=1273723027]
+position = Vector2(1136, 324)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="MuurRechts" unique_id=1127566746]
+shape = SubResource("RectangleShape2D_mp8ed")
