@@ -1,0 +1,43 @@
+[gd_scene format=3 uid="uid://bk0j866vrk3bg"]
+
+[ext_resource type="Script" uid="uid://difdfq5nvjjqe" path="res://scripts/ui/VoorbereidingUI.gd" id="1_xp231"]
+
+[node name="VoorbereidingUI" type="Control" unique_id=435563096]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_xp231")
+
+[node name="Panel" type="Panel" parent="." unique_id=65112855]
+layout_mode = 0
+offset_left = 376.0
+offset_top = 174.0
+offset_right = 776.0
+offset_bottom = 474.0
+
+[node name="VBoxContainer" type="VBoxContainer" parent="Panel" unique_id=433220098]
+layout_mode = 0
+offset_left = 20.0
+offset_top = 20.0
+offset_right = 380.0
+offset_bottom = 280.0
+
+[node name="Label" type="Label" parent="Panel/VBoxContainer" unique_id=1949553064]
+layout_mode = 2
+text = "Wat neem je mee naar de expo?"
+
+[node name="CheckBox" type="CheckBox" parent="Panel/VBoxContainer" unique_id=329504227]
+layout_mode = 2
+text = "Presentatie"
+
+[node name="CheckBox2" type="CheckBox" parent="Panel/VBoxContainer" unique_id=1939084053]
+layout_mode = 2
+text = "Documentatie
+"
+
+[node name="Button" type="Button" parent="Panel/VBoxContainer" unique_id=327984480]
+layout_mode = 2
+text = "Bevestigen"

@@ -12,7 +12,8 @@ func _ready():
 func _process(_delta):
 	if speler_in_zone and Input.is_action_just_pressed("interact"):
 		if zone_id == GameState.huidige_stap:
-			print("Zone ", zone_id, " geactiveerd!")
+			var ui = load("res://scenes/ui/VoorbereidingUI.tscn").instantiate()
+			get_tree().root.add_child(ui)
 
 func _on_body_entered(body):
 	if body.is_in_group("speler"):
