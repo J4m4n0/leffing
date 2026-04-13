@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://b43tdu68al2sh"]
+
+[ext_resource type="Script" uid="uid://cmnaeoo8ohqcw" path="res://scripts/Speler.gd" id="1_lkn46"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ui6gb"]
+
+[node name="ExpoKamer" type="Node2D" unique_id=392395783]
+
+[node name="Speler" type="CharacterBody2D" parent="." unique_id=590566744]
+script = ExtResource("1_lkn46")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Speler" unique_id=452065031]
+shape = SubResource("RectangleShape2D_ui6gb")
+
+[node name="ColorRect" type="ColorRect" parent="Speler" unique_id=1460391442]
+offset_right = 40.0
+offset_bottom = 40.0
