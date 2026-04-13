@@ -14,7 +14,8 @@ func _process(_delta):
 		if zone_id == GameState.huidige_stap:
 			var ui_scenes = [
 				"res://scenes/ui/VoorbereidingUI.tscn",
-    			"res://scenes/ui/PresentatieUI.tscn"
+				"res://scenes/ui/PresentatieUI.tscn",
+				"res://scenes/ui/FeedbackUI.tscn"
 			]
 			var ui = load(ui_scenes[zone_id]).instantiate()
 			get_tree().root.add_child(ui)
