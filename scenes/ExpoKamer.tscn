@@ -1,6 +1,7 @@
 [gd_scene format=3 uid="uid://b43tdu68al2sh"]
 
 [ext_resource type="Script" uid="uid://cmnaeoo8ohqcw" path="res://scripts/Speler.gd" id="1_lkn46"]
+[ext_resource type="PackedScene" uid="uid://1l4ylmjgjmtj" path="res://scenes/TriggerZone.tscn" id="2_ui6gb"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_ui6gb"]
 
@@ -18,7 +19,7 @@ size = Vector2(32, 648)
 
 [node name="ExpoKamer" type="Node2D" unique_id=392395783]
 
-[node name="Speler" type="CharacterBody2D" parent="." unique_id=590566744]
+[node name="Speler" type="CharacterBody2D" parent="." unique_id=590566744 groups=["speler"]]
 position = Vector2(574, 324)
 script = ExtResource("1_lkn46")
 
@@ -54,3 +55,6 @@ position = Vector2(1136, 324)
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="MuurRechts" unique_id=1127566746]
 shape = SubResource("RectangleShape2D_mp8ed")
+
+[node name="TriggerZone" parent="." unique_id=1023075807 instance=ExtResource("2_ui6gb")]
+position = Vector2(200, 300)
