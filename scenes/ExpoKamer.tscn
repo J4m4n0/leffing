@@ -58,3 +58,7 @@ shape = SubResource("RectangleShape2D_mp8ed")
 
 [node name="TriggerZone" parent="." unique_id=1023075807 instance=ExtResource("2_ui6gb")]
 position = Vector2(200, 300)
+
+[node name="TriggerZone2" parent="." unique_id=1255070993 instance=ExtResource("2_ui6gb")]
+position = Vector2(900, 300)
+zone_id = 1

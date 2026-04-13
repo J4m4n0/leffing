@@ -12,7 +12,11 @@ func _ready():
 func _process(_delta):
 	if speler_in_zone and Input.is_action_just_pressed("interact"):
 		if zone_id == GameState.huidige_stap:
-			var ui = load("res://scenes/ui/VoorbereidingUI.tscn").instantiate()
+			var ui_scenes = [
+				"res://scenes/ui/VoorbereidingUI.tscn",
+    			"res://scenes/ui/PresentatieUI.tscn"
+			]
+			var ui = load(ui_scenes[zone_id]).instantiate()
 			get_tree().root.add_child(ui)
 
 func _on_body_entered(body):
